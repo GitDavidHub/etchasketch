@@ -8,15 +8,32 @@
     <link rel="stylesheet" href="reset.css">
 </head>
 <body>
-   
-    <h1>
-        THE TITLE
-    </h1>
-    
-    <div id="container">
-        <div>
-            wa wa wee waaooo!
+
+    <div class="container"> 
+        <div class="title">Etch-A-Sketch</div>
+
+        <div class="grid"> 
+            <div id="etchASketch"></div>
         </div>
+
+        
+        
+        <div class="buttons">
+            <button onclick="setColor()">Choose Colour</button>
+            <button onclick="setEraser()">Eraser</button>
+            <button onclick="resetBoard()">Reset</button>
+        </div>
+
+        <div class="slider">
+            <label for="gridSizeSlider">Adjust Grid Size:</label>
+            <div id="gridSizeDisplay"></div>    
+        </div>
+        <input type="range" id="gridSizeSlider" min="0" max="64" value="16" oninput="createGrid()">
+
+
+
+
+
     </div>
     
 </body>
